@@ -55,7 +55,7 @@ a {
 
 .jumbotron {
   height: 400px;
-  background: url("hero.jpg") 0 0 no-repeat;
+  background: image_url("hero.jpg") 0 0 no-repeat;
   background-size: cover;
   color: $c-d;
   text-shadow: 0 0 10px $c-3;
