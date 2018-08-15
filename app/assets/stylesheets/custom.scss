@@ -1,0 +1,115 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$c-p: #22253c;
+$c-3: #333;
+$c-9: #999;
+$c-b: #bbb;
+$c-d: #ddd;
+$c-f: #fff;
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1;
+}
+
+a {
+  color: $c-d;
+  &:hover {
+    transition: 0.5s;
+    color: $c-f;
+    text-decoration: none;
+    text-shadow: 0 0 5px $c-3;
+  }
+}
+
+.container {
+  width: 800px;
+}
+
+.navbar {
+  &-brand {
+    padding: 0 0 0 10px;
+    height: 30px;
+    text-transform: uppercase;
+    a {
+      color: $c-b;
+      &::after {
+        margin-left: 10px;
+        content: "by Ruby on Rails Tutorial";
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+        color: $c-9;
+      }
+    }
+  }
+  
+  &-inverse {
+    background-color: $c-p;
+    box-shadow: 0 2px 5px darken($c-p,10%);
+  }
+  
+  &-nav {
+    margin-top: 7px;
+  }
+}
+
+.jumbotron {
+  height: 400px;
+  background: url("hero.jpg") 0 0 no-repeat;
+  background-size: cover;
+  color: $c-d;
+  text-shadow: 0 0 10px $c-3;
+  h1 {
+    font-size: 6.2rem;
+    img {
+      margin: 10px 20px 0 0;
+      float: left;
+      filter: drop-shadow(0 0 5px $c-3);
+    }
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    background-color: $c-p;
+    border-color: $c-p;
+    
+    &:hover {
+      background-color: lighten($c-p,10%);
+      border-color: lighten($c-p,10%);
+    }
+  }
+}
+
+.footer {
+    background-color: $c-p;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    box-shadow: 0 -2px 10px $c-9;
+    border-top: 1px solid lighten($c-p,30%);
+    color: $c-b;
+    
+    small {
+      float: left;
+    }
+    
+    ul {
+      float: right;
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      li {
+        margin-left: 30px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+}
