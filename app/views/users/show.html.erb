@@ -1,0 +1,11 @@
+<%= provide(:title, @user.name) %>
+<div class="jumbotron">
+  <div class="container">
+    <h1>
+      <%= gravatar_for @user %>
+      <span class="show_name"><%= @user.name %></span>
+    </h1>
+    <p><%= @user.email %></p>
+    <p class="small created"><%= Time.now %> | <%= @user.created_at %> / <%= @user.updated_at %></p>
+  </div>
+</div>
