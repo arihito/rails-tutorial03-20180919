@@ -1,0 +1,21 @@
+.show_name {
+  display: block;
+  margin-bottom: -10px;
+  padding-top: 5px; }
+
+img.gravatar {
+  border-radius: 5px; }
+
+.created {
+  padding: 5px 20px;
+  background: linear-gradient(to right, rgba(55, 59, 98, 0.4), rgba(34, 37, 60, 0));
+  width: 100%;
+  border-radius: 3px;
+  text-shadow: 0 0 3px #333;
+  letter-spacing: 1px;
+  color: #ccc; }
+  .created strong {
+    font-size: 1rem;
+    color: #999; }
+
+/*# sourceMappingURL=users.css.map */
