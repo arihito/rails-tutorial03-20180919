@@ -1,14 +1,14 @@
 <footer class="footer">
   <div class="container">
     <small>
-      The <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+      <i class='glyphicon glyphicon-copyright-mark'></i>The <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
       by <a href="http://www.michaelhartl.com/">Michael Hartl</a>
     </small>
     <nav>
       <ul>
-        <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
-        <li><a href="http://news.railstutorial.org/">News</a></li>
+        <li><%= link_to about_path do %><i class='glyphicon glyphicon-leaf'></i>About<% end %></li>
+        <li><%= link_to contact_path do %><i class='glyphicon glyphicon-send'></i>Contact<% end %></li>
+        <li><%= link_to "http://news.railstutorial.org/" do %><i class='glyphicon glyphicon-list'></i>News<% end %></li>
       </ul>
     </nav>
   </div>

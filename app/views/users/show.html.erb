@@ -10,7 +10,7 @@
       <%= gravatar_for @user %>
       <span class="show_name"><%= @user.name %></span>
     </h1>
-    <p><%= @user.email %></p>
-    <p class="small created"><strong><%= Time.now %></strong> | <%= @user.created_at %> / <%= @user.updated_at %></p>
+    <p class="email"><i class='glyphicon glyphicon-envelope'></i><%= @user.email %></p>
+    <p class="small created"><strong><i class='glyphicon glyphicon-time'></i><%= Time.now %></strong> | <%= @user.created_at %> / <%= @user.updated_at %></p>
   </div>
 </div>

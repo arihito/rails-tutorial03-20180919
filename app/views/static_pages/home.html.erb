@@ -9,7 +9,6 @@
       <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
       sample application.
     </h2>
-    
-    <%= link_to "Sign up now !", signup_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to signup_path, class: "btn btn-lg btn-primary" do %><i class='glyphicon glyphicon-circle-arrow-right'></i>Sign up now !<% end %>
   </div>
 </div>
